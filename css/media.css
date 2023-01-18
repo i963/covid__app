@@ -21,10 +21,10 @@ margin: 0;
 justify-content: center;
 }
 .header__button {
-flex: 0 0 170px;
+flex: 0 0 150px;
 }
 .button__blue{
-margin: 0 0 0 60px;
+margin: 0 0 0 50px;
 }
 .get-started__wrapper::before {
 right: 175px;
@@ -54,7 +54,7 @@ display: none;
 display: block;
 position: relative;
 top: 0;
-left: 25%;
+/* left: 25%; */
 }
 /* выпадающее меню dropdown */
 .menu__body{
@@ -127,6 +127,9 @@ gap: 20px;
 .app-about__block1 {
 padding: 0 50px;
 }
+.app-about__block2 {
+padding: 0;
+}
 .experts{
 padding: 60px 0 0 0;
 background: #FAFBFD;
@@ -148,7 +151,7 @@ line-height: 1
 }
 .experts-statistic__media {
 flex-direction: column;
-padding: 0 15px;
+padding: 0px;
 }
 .media-text__item {
 justify-content: center;
@@ -164,6 +167,9 @@ padding: 0;
 }
 .features {
 padding: 45px 15px;
+}
+.features__wrapper {
+padding: 0;
 }
 .features-text__item {
 text-align: start;
@@ -184,12 +190,13 @@ margin: 0;
 .item-options__icon {
 margin: 0 0 30px 0;
 }
-.footer__wrapper{
-min-height: 75px;
-gap: 2em;
+.download__items{
+	padding: 25px 0;
+	gap: 2em;
 }
+
 }
-/* small mobile */
+/*mobile */
 @media (max-width: 479.98px){
 .header__logo{
 flex: 0 0 40px;
@@ -199,4 +206,21 @@ overflow: hidden;
 display: inline-block;
 padding: 6px 15px 8px;
 }
+.statistic-experts__block {
+padding: 10px;
+}
+.item-experts__value {
+font-size: 18px;
+}
+.item-experts__text {
+font-size: 8px;
+line-height: 1;
+}
+.download__items{
+flex-direction: column;
+gap: 20px;
+}
+}
+/* small mobile */
+@media (max-width: 319.98px){
 }

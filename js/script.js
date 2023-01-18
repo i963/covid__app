@@ -4,24 +4,31 @@ const menuBurger = document.querySelector('.menu__burger');
 const menuBody = document.querySelector('.menu__body');
 const header = document.querySelector('.header__wrapper');
 const allBody = document.body;
-// const container = document.querySelector('.container');
-if(menuBurger){
+
 menuBurger.addEventListener('click', function(){
-	menuBurger.classList.toggle('_active');
-	menuBody.classList.toggle('_active');	
-   // header.style.position = 'fixed'
+	if (menuBody.classList.contains('_active')){
+	menuBurger.classList.remove('_active');
+	menuBody.classList.remove('_active');	
+	document.body.style.cssText = '';
+	} else{
+	menuBurger.classList.add('_active');
+	menuBody.classList.add('_active');	
+	document.body.style.cssText = `overflow: hidden`;
+	}
 })
-}
-if (menuBurger.classList.contains('_active') || menuBody.classList.contains('_active') ) {
-	allBody.style.overflow = 'hidden'
-}
 
-// function burgerMenu(){
-// // container.classList.toggle('_lock');
-// menuBurger.classList.toggle('_active');
-// menuBody.classList.toggle('_active');	
-// document.body.classList.toggle('_lock')
+// const scrollController = {
+// 	disabledScroll(){
+// 		document.body.style.cssText = `overflow: hidden`;
+// 	},
+// 	enabledScroll(){
+// 		document.body.style.cssText = '';
+
+// 	},
 // }
-
-// $('html, body').css('overflow', 'hidden'); - блокировка скролла. 
-// Если хотите вернуть в дефолтное состояние, то - $('html, body').css('overflow', '');
+// const openBurger = () => {
+// 	scrollController.disabledScroll()
+// }
+// const closeBurger = () => {
+// 	scrollController.enabledScroll()
+// }
