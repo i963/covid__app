@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 @import url(https://fonts.googleapis.com/css?family=Raleway:700,800);
 
+/* nullstyle */
 *,*::before,*::after{
 padding: 0;
 margin: 0;
@@ -30,7 +31,8 @@ a:hover{text-decoration: none;}
 ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:400, 500, 600,700;}
-/* ------------------------------------------------- */
+
+/* general style */
 body {
 font-family: 'Rubik';
 font-size: 12px;
@@ -42,11 +44,10 @@ flex-direction: column;
 min-height: 100%;
 overflow: hidden;
 }
-/* селектор атрибута */
 [class*="__wrapper"]{
 max-width: 1087px;
-margin: 0px auto;
-padding: 0px 15px;
+margin: 0 auto;
+padding: 0 15px;
 }
 
 /* header */
@@ -122,7 +123,6 @@ color: #FCFDFE;
 .menu__burger{
 display: none;
 position: absolute;
-/* margin: 0 15px; */
 width: 30px;
 height: 20px;
 }
@@ -134,7 +134,6 @@ display: flex;
 left: 0;
 top: 0;
 } 
-/* прорисовка полосок меню */
 .menu__burger::before,
 .menu__burger span,
 .menu__burger::after{
@@ -145,12 +144,10 @@ height: 10%;
 left: 0;
 transition: all 0.3s ease 0s;
 }
-/* добавить контент, чтоб работал обработчик */
 .menu__burger::before,
 .menu__burger::after{
 content: "";
 }
-/* прописать начальные позиции и позиции после поворота */
 .menu__burger::before{
 top: 0;
 }
@@ -184,7 +181,7 @@ background: rgba(250, 251, 253, 1);
 display: flex;
 position: relative;
 align-items: center;
-padding: 50px 0px 45px 0px;
+padding: 50px 0 45px 0;
 }
 .get-started__wrapper::before {
 content: "";
@@ -195,7 +192,7 @@ top: 0;
 right: 270px;
 margin: -114px 0 0 0;
 background-color: #EC5863;
-border-radius: 30px 0px 0px 30px;
+border-radius: 30px 0 0 30px;
 transform: translate(100%, 0px);
 z-index: 11;
 }
@@ -208,7 +205,7 @@ flex-direction: column;
 .get-started-text__item {
 flex: 1 1 82%;
 padding: 20px 0 80px 0;
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 .item__title {
 font-weight: 700;
@@ -271,6 +268,7 @@ z-index: 28;
 .get-started-image__item img{
 min-width: 100%;
 }
+
 /* app-about section */
 .app-about{
 padding: 80px 0;
@@ -297,10 +295,7 @@ border-radius: 16px;
 }
 .app-about-image__item img{
 position: relative;
-/* box-shadow: 2px 4px 32px rgba(0, 0, 0, 0.12);
-border-radius: 16px; */
 z-index: 15;
-/* max-width: 100%; */
 }
 .app-about-image__item::after{
 content: "";
@@ -319,7 +314,7 @@ border-radius: 30px;
 background-color: #EC5863;
 width: 77px;
 height: 77px;
-box-shadow: 0px 4px 36px rgba(236, 88, 99, 0.12);
+box-shadow: 0 4px 36px rgba(236, 88, 99, 0.12);
 }
 .item__decoration1{
 top: 0;
@@ -358,7 +353,7 @@ padding: 45px 140px 45px 125px;
 display: flex;
 align-items: center;
 background-color: #fff;
-box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
+box-shadow: 0 2px 24px rgba(88, 126, 236, 0.15);
 border-radius: 16px;
 position: relative;
 z-index: 2;
@@ -424,7 +419,7 @@ padding: 60px 90px 50px 0;
 flex: 0 1 50%;
 padding: 0 0 30% 0 ;
 position: relative;
-box-shadow: 0px 4px 18px rgb(88 126 236 / 18%);
+box-shadow: 0 4px 18px rgb(88, 126, 236, 0.18);
 border-radius: 8px;
 overflow: hidden;
 }
@@ -436,6 +431,7 @@ top: 0;
 left: 0;
 object-fit: cover;
 }
+
 /* features */
 .features {
 background: #FFFFFF;
@@ -463,10 +459,10 @@ flex: 1 1 33.33%;
 position: relative;
 align-items: center;
 background-color: #fff;
-box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+box-shadow: 0 4px 18px rgba(88, 126, 236, 0.18);
 border-radius: 8px;
 padding: 36px 15px;
-margin: 0px 36px;
+margin: 0 36px;
 z-index: 12;
 }
 .block-options__item:first-child {
@@ -487,7 +483,7 @@ letter-spacing: 0.08em;
 color: #000000;
 }
 .features-text__item .item__title span{
-	color: #EC5863;
+color: #EC5863;
 }
 .item-options__text {
 line-height: 138.5%;
@@ -534,16 +530,10 @@ transform: rotate(-30deg);
 .footer__wrapper{
 flex: 0 0 auto;
 }
-
 .download__items{
-	display: flex;
-	padding: 45px 0;
-	gap: 3.75em;
-	justify-content: center;
-	align-items: center;
+display: flex;
+padding: 45px 0;
+gap: 60px;
+justify-content: center;
+align-items: center;
 }
-
-
-
-
-

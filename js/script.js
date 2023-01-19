@@ -12,7 +12,7 @@ menuBurger.addEventListener('click', function(){
 	document.body.style.cssText = '';
 	} else{
 	menuBurger.classList.add('_active');
-	menuBody.classList.add('_active');
+	menuBody.classList.add('_active');	
 	document.body.style.cssText = `overflow: hidden`;
 	}
 })
