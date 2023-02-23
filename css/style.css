@@ -107,8 +107,14 @@ padding: 12px 30px 16px 30px;
 border-radius: 5px;
 background-color: #EC5863;
 }
+.button:hover{
+background-color: #db0c1a;
+}
 .button__blue{
 background-color: #4285F4;
+}
+.button__blue:hover{
+background-color: #0b51c1;
 }
 .button span{
 font-family:'Raleway';
@@ -227,6 +233,7 @@ letter-spacing: 0.08em;
 display: flex;
 flex: 0 0 18%;
 padding: 0 0 45px 0;
+cursor: pointer;
 }
 .video-item-icon{
 justify-content: flex-start;
@@ -471,6 +478,9 @@ margin: 0 36px 0 0;
 .block-options__item:last-child {
 margin: 0 0 0 36px;
 }
+.block-options__item:hover{
+box-shadow: 0 25px 25px rgba(88, 126, 236, 0.5);
+} 
 .item-options__icon {
 margin: 0 0 60px 0;
 }
@@ -527,9 +537,6 @@ transform: rotate(-30deg);
 }
 
 /* footer */
-.footer__wrapper{
-flex: 0 0 auto;
-}
 .download__items{
 display: flex;
 padding: 45px 0;

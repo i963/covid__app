@@ -66,6 +66,7 @@ padding: 50px 15px;
 justify-content: center;
 background-color: #FAFBFD;
 transition: left 0.3s ease 0s;
+overflow: auto;
 }
 .menu__list{
 flex-direction: column;
